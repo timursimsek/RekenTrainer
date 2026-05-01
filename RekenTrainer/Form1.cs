@@ -113,7 +113,7 @@ namespace RekenTrainer
 
                 return;
             }
-            lblCurrentExercise.Text = multiplyExercises[currentIndex] + " = ?";
+            lblCurrentExercise.Text = multiplyExercises[currentIndex] + " = ";
             txtAnswer.Text = "";
             txtAnswer.Enabled = true;
             txtAnswer.Focus();

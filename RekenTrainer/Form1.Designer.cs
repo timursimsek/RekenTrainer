@@ -37,11 +37,12 @@ namespace RekenTrainer
             btnCreate = new Button();
             lstBoxExercises = new ListBox();
             grpBoxExercise = new GroupBox();
+            lblScore = new Label();
+            lblTimer = new Label();
             txtAnswer = new TextBox();
             lblCurrentExercise = new Label();
+            label1 = new Label();
             timer1 = new Timer(components);
-            lblTimer = new Label();
-            lblScore = new Label();
             grpBoxMultiply.SuspendLayout();
             grpBoxExercise.SuspendLayout();
             SuspendLayout();
@@ -98,6 +99,7 @@ namespace RekenTrainer
             grpBoxExercise.Controls.Add(txtAnswer);
             grpBoxExercise.Controls.Add(lblCurrentExercise);
             grpBoxExercise.Controls.Add(lstBoxExercises);
+            grpBoxExercise.Controls.Add(label1);
             grpBoxExercise.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             grpBoxExercise.Location = new Point(120, 12);
             grpBoxExercise.Name = "grpBoxExercise";
@@ -107,15 +109,34 @@ namespace RekenTrainer
             grpBoxExercise.Text = "Oefeningen";
             grpBoxExercise.Enter += grpBoxExercise_Enter;
             // 
+            // lblScore
+            // 
+            lblScore.Font = new Font("Segoe UI", 18F);
+            lblScore.Location = new Point(84, 361);
+            lblScore.Name = "lblScore";
+            lblScore.Size = new Size(95, 32);
+            lblScore.TabIndex = 7;
+            lblScore.Text = "0 / 0";
+            lblScore.TextAlign = ContentAlignment.MiddleRight;
+            // 
+            // lblTimer
+            // 
+            lblTimer.AutoSize = true;
+            lblTimer.Font = new Font("Segoe UI", 18F);
+            lblTimer.Location = new Point(6, 361);
+            lblTimer.Name = "lblTimer";
+            lblTimer.Size = new Size(71, 32);
+            lblTimer.TabIndex = 6;
+            lblTimer.Text = "00:00";
+            // 
             // txtAnswer
             // 
-            txtAnswer.BackColor = SystemColors.ControlLight;
+            txtAnswer.BackColor = SystemColors.ButtonHighlight;
             txtAnswer.BorderStyle = BorderStyle.None;
             txtAnswer.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAnswer.Location = new Point(120, 26);
-            txtAnswer.Multiline = true;
+            txtAnswer.Location = new Point(121, 33);
             txtAnswer.Name = "txtAnswer";
-            txtAnswer.Size = new Size(59, 44);
+            txtAnswer.Size = new Size(59, 28);
             txtAnswer.TabIndex = 6;
             txtAnswer.TextAlign = HorizontalAlignment.Center;
             txtAnswer.TextChanged += txtAnswer_TextChanged;
@@ -123,37 +144,26 @@ namespace RekenTrainer
             // 
             // lblCurrentExercise
             // 
+            lblCurrentExercise.BackColor = SystemColors.ButtonHighlight;
             lblCurrentExercise.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblCurrentExercise.Location = new Point(6, 26);
             lblCurrentExercise.Name = "lblCurrentExercise";
-            lblCurrentExercise.Size = new Size(95, 44);
+            lblCurrentExercise.Size = new Size(114, 44);
             lblCurrentExercise.TabIndex = 5;
             lblCurrentExercise.TextAlign = ContentAlignment.MiddleLeft;
+            // 
+            // label1
+            // 
+            label1.BackColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(111, 26);
+            label1.Name = "label1";
+            label1.Size = new Size(69, 44);
+            label1.TabIndex = 8;
             // 
             // timer1
             // 
             timer1.Enabled = true;
             timer1.Tick += timer1_Tick;
-            // 
-            // lblTimer
-            // 
-            lblTimer.AutoSize = true;
-            lblTimer.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblTimer.Location = new Point(6, 361);
-            lblTimer.Name = "lblTimer";
-            lblTimer.Size = new Size(72, 32);
-            lblTimer.TabIndex = 6;
-            lblTimer.Text = "00:00";
-            // 
-            // lblScore
-            // 
-            lblScore.AutoSize = true;
-            lblScore.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblScore.Location = new Point(115, 361);
-            lblScore.Name = "lblScore";
-            lblScore.Size = new Size(64, 32);
-            lblScore.TabIndex = 7;
-            lblScore.Text = "0 / 0";
             // 
             // Form1
             // 
@@ -184,5 +194,6 @@ namespace RekenTrainer
         private TextBox txtAnswer;
         private Label lblScore;
         private Label lblTimer;
+        private Label label1;
     }
 }
