@@ -14,7 +14,7 @@ namespace RekenTrainer
         private int currentIndex = 0;
         private int score = 0;
         private System.Diagnostics.Stopwatch stopwatch = new System.Diagnostics.Stopwatch();
-
+        private string spelerNaam = "";
 
         public Form1()
         {
@@ -30,6 +30,15 @@ namespace RekenTrainer
 
             List<int> multiplyCheck = new List<int>();
             Random rnd = new Random();
+
+            string naam = InputBox("Naam", "Wat is je naam?");
+            if (string.IsNullOrWhiteSpace(naam))
+            {
+                MessageBox.Show("Gelieve een naam in te vullen.");
+                return;
+            }
+
+            spelerNaam = naam;
 
             string input = InputBox("Aantal oefeningen", "Hoeveel oefeningen wil je maken?");
             if (!int.TryParse(input, out int aantalOefeningen) || aantalOefeningen <= 0)
@@ -55,9 +64,11 @@ namespace RekenTrainer
 
             lstBoxExercises.Font = new Font("Consolas", 10);
             lstBoxExercises.Items.Clear();
+            lblScore.Text = $"0 / {multiplyExercises.Count}";
             stopwatch.Reset();
             stopwatch.Start();
             ToonVolgendeOefening();
+
         }
         private void ShowBigMessage(string title, string message)
         {
@@ -91,14 +102,14 @@ namespace RekenTrainer
             if (currentIndex >= multiplyExercises.Count)
             {
                 stopwatch.Stop();
-
+                lblScore.Text = $"{score} / {multiplyExercises.Count}";
                 lblCurrentExercise.Text = "Klaar!";
                 txtAnswer.Enabled = false;
 
                 TimeSpan tijd = stopwatch.Elapsed;
 
                 ShowBigMessage("Resultaat",
-                    $"Je score: {score} op {multiplyExercises.Count}\nTijd: {tijd.Minutes:D2}:{tijd.Seconds:D2}");
+                    $"🎉⭐ {spelerNaam} ⭐🎉\n Je score: {score} op {multiplyExercises.Count}\nTijd: {tijd.Minutes:D2}:{tijd.Seconds:D2}");
 
                 return;
             }
@@ -106,6 +117,7 @@ namespace RekenTrainer
             txtAnswer.Text = "";
             txtAnswer.Enabled = true;
             txtAnswer.Focus();
+            lblScore.Text = $"{score} / {multiplyExercises.Count}";
         }
 
         private void txtAnswer_KeyDown(object sender, KeyEventArgs e)
@@ -134,6 +146,7 @@ namespace RekenTrainer
             lstBoxExercises.Items.Insert(0, formatted);
 
             currentIndex++;
+            lblScore.Text = $"{score} / {multiplyExercises.Count}";
             ToonVolgendeOefening();
         }
 
@@ -193,6 +206,11 @@ namespace RekenTrainer
         private void grpBoxExercise_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTimer.Text = stopwatch.Elapsed.ToString(@"mm\:ss");
         }
     }
 }

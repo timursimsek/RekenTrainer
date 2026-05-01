@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RekenTrainer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7570c4e1c27567efc5d70c302263525854cbfd32")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2159ae90605c15c41dba9482e717f944d8158058")]
 [assembly: System.Reflection.AssemblyProductAttribute("RekenTrainer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RekenTrainer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

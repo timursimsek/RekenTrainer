@@ -40,6 +40,8 @@ namespace RekenTrainer
             txtAnswer = new TextBox();
             lblCurrentExercise = new Label();
             timer1 = new Timer(components);
+            lblTimer = new Label();
+            lblScore = new Label();
             grpBoxMultiply.SuspendLayout();
             grpBoxExercise.SuspendLayout();
             SuspendLayout();
@@ -71,10 +73,10 @@ namespace RekenTrainer
             // btnCreate
             // 
             btnCreate.BackColor = Color.Transparent;
-            btnCreate.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnCreate.Location = new Point(12, 314);
+            btnCreate.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnCreate.Location = new Point(12, 317);
             btnCreate.Name = "btnCreate";
-            btnCreate.Size = new Size(102, 48);
+            btnCreate.Size = new Size(102, 88);
             btnCreate.TabIndex = 3;
             btnCreate.Text = "Maak!";
             btnCreate.UseVisualStyleBackColor = false;
@@ -84,20 +86,22 @@ namespace RekenTrainer
             // 
             lstBoxExercises.FormattingEnabled = true;
             lstBoxExercises.ItemHeight = 21;
-            lstBoxExercises.Location = new Point(6, 70);
+            lstBoxExercises.Location = new Point(6, 76);
             lstBoxExercises.Name = "lstBoxExercises";
             lstBoxExercises.Size = new Size(173, 277);
             lstBoxExercises.TabIndex = 4;
             // 
             // grpBoxExercise
             // 
+            grpBoxExercise.Controls.Add(lblScore);
+            grpBoxExercise.Controls.Add(lblTimer);
             grpBoxExercise.Controls.Add(txtAnswer);
             grpBoxExercise.Controls.Add(lblCurrentExercise);
             grpBoxExercise.Controls.Add(lstBoxExercises);
             grpBoxExercise.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             grpBoxExercise.Location = new Point(120, 12);
             grpBoxExercise.Name = "grpBoxExercise";
-            grpBoxExercise.Size = new Size(185, 356);
+            grpBoxExercise.Size = new Size(185, 399);
             grpBoxExercise.TabIndex = 5;
             grpBoxExercise.TabStop = false;
             grpBoxExercise.Text = "Oefeningen";
@@ -108,7 +112,7 @@ namespace RekenTrainer
             txtAnswer.BackColor = SystemColors.ControlLight;
             txtAnswer.BorderStyle = BorderStyle.None;
             txtAnswer.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtAnswer.Location = new Point(120, 23);
+            txtAnswer.Location = new Point(120, 26);
             txtAnswer.Multiline = true;
             txtAnswer.Name = "txtAnswer";
             txtAnswer.Size = new Size(59, 44);
@@ -120,17 +124,42 @@ namespace RekenTrainer
             // lblCurrentExercise
             // 
             lblCurrentExercise.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCurrentExercise.Location = new Point(6, 23);
+            lblCurrentExercise.Location = new Point(6, 26);
             lblCurrentExercise.Name = "lblCurrentExercise";
             lblCurrentExercise.Size = new Size(95, 44);
             lblCurrentExercise.TabIndex = 5;
             lblCurrentExercise.TextAlign = ContentAlignment.MiddleLeft;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Tick += timer1_Tick;
+            // 
+            // lblTimer
+            // 
+            lblTimer.AutoSize = true;
+            lblTimer.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTimer.Location = new Point(6, 361);
+            lblTimer.Name = "lblTimer";
+            lblTimer.Size = new Size(72, 32);
+            lblTimer.TabIndex = 6;
+            lblTimer.Text = "00:00";
+            // 
+            // lblScore
+            // 
+            lblScore.AutoSize = true;
+            lblScore.Font = new Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblScore.Location = new Point(115, 361);
+            lblScore.Name = "lblScore";
+            lblScore.Size = new Size(64, 32);
+            lblScore.TabIndex = 7;
+            lblScore.Text = "0 / 0";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(317, 388);
+            ClientSize = new Size(322, 451);
             Controls.Add(grpBoxExercise);
             Controls.Add(btnCreate);
             Controls.Add(grpBoxMultiply);
@@ -153,5 +182,7 @@ namespace RekenTrainer
         private System.Windows.Forms.Timer timer1;
         private Label lblCurrentExercise;
         private TextBox txtAnswer;
+        private Label lblScore;
+        private Label lblTimer;
     }
 }
