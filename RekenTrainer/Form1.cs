@@ -1,4 +1,8 @@
-﻿using System.Drawing.Text;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Text;
+using System.Windows.Forms;
 
 namespace RekenTrainer
 {
@@ -15,6 +19,7 @@ namespace RekenTrainer
         public Form1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btnCreate_Click(object sender, EventArgs e)
@@ -54,6 +59,32 @@ namespace RekenTrainer
             stopwatch.Start();
             ToonVolgendeOefening();
         }
+        private void ShowBigMessage(string title, string message)
+        {
+            Form popup = new Form();
+            popup.Text = title;
+            popup.StartPosition = FormStartPosition.CenterParent;
+            popup.Size = new Size(400, 250);
+
+            Label lbl = new Label();
+            lbl.Text = message;
+            lbl.Font = new Font("Segoe UI", 16, FontStyle.Regular);
+            lbl.AutoSize = false;
+            lbl.TextAlign = ContentAlignment.MiddleCenter;
+            lbl.Dock = DockStyle.Fill;
+
+            Button ok = new Button();
+            ok.Text = "OK";
+            ok.Font = new Font("Segoe UI", 14);
+            ok.Dock = DockStyle.Bottom;
+            ok.Height = 50;
+            ok.Click += (s, e) => popup.Close();
+
+            popup.Controls.Add(lbl);
+            popup.Controls.Add(ok);
+
+            popup.ShowDialog();
+        }
 
         private void ToonVolgendeOefening()
         {
@@ -66,13 +97,8 @@ namespace RekenTrainer
 
                 TimeSpan tijd = stopwatch.Elapsed;
 
-                MessageBox.Show(
-                    $"Je score: {score} op {multiplyExercises.Count}\n" +
-                    $"Tijd: {tijd.Minutes:D2}:{tijd.Seconds:D2}",
-                    "Resultaat",
-                    MessageBoxButtons.OK,
-                    MessageBoxIcon.Information
-                );
+                ShowBigMessage("Resultaat",
+                    $"Je score: {score} op {multiplyExercises.Count}\nTijd: {tijd.Minutes:D2}:{tijd.Seconds:D2}");
 
                 return;
             }

@@ -1,4 +1,7 @@
-﻿namespace RekenTrainer
+﻿using System.Drawing;
+using System.Windows.Forms;
+
+namespace RekenTrainer
 {
     partial class Form1
     {
@@ -36,7 +39,7 @@
             grpBoxExercise = new GroupBox();
             txtAnswer = new TextBox();
             lblCurrentExercise = new Label();
-            timer1 = new System.Windows.Forms.Timer(components);
+            timer1 = new Timer(components);
             grpBoxMultiply.SuspendLayout();
             grpBoxExercise.SuspendLayout();
             SuspendLayout();
@@ -81,7 +84,7 @@
             // 
             lstBoxExercises.FormattingEnabled = true;
             lstBoxExercises.ItemHeight = 21;
-            lstBoxExercises.Location = new Point(6, 73);
+            lstBoxExercises.Location = new Point(6, 70);
             lstBoxExercises.Name = "lstBoxExercises";
             lstBoxExercises.Size = new Size(173, 277);
             lstBoxExercises.TabIndex = 4;
@@ -121,7 +124,6 @@
             lblCurrentExercise.Name = "lblCurrentExercise";
             lblCurrentExercise.Size = new Size(95, 44);
             lblCurrentExercise.TabIndex = 5;
-            lblCurrentExercise.Text = "(empty)";
             lblCurrentExercise.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // Form1

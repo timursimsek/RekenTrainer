@@ -3,16 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\simse\\Documents\\C# Projects\\RekenTrainer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2B2CE3CF-B9BA-45AA-9C67-EEAD0BB21A90}|RekenTrainer\\RekenTrainer.csproj|c:\\users\\simse\\documents\\c# projects\\rekentrainer\\rekentrainer\\rekentrainer.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{2B2CE3CF-B9BA-45AA-9C67-EEAD0BB21A90}|RekenTrainer\\RekenTrainer.csproj|solutionrelative:rekentrainer\\rekentrainer.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2B2CE3CF-B9BA-45AA-9C67-EEAD0BB21A90}|RekenTrainer\\RekenTrainer.csproj|c:\\users\\simse\\documents\\c# projects\\rekentrainer\\rekentrainer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2B2CE3CF-B9BA-45AA-9C67-EEAD0BB21A90}|RekenTrainer\\RekenTrainer.csproj|solutionrelative:rekentrainer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2B2CE3CF-B9BA-45AA-9C67-EEAD0BB21A90}|RekenTrainer\\RekenTrainer.csproj|c:\\users\\simse\\documents\\c# projects\\rekentrainer\\rekentrainer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2B2CE3CF-B9BA-45AA-9C67-EEAD0BB21A90}|RekenTrainer\\RekenTrainer.csproj|solutionrelative:rekentrainer\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +14,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\simse\\Documents\\C# Projects\\RekenTrainer\\RekenTrainer\\Form1.cs",
               "RelativeDocumentMoniker": "RekenTrainer\\Form1.cs",
               "ToolTip": "C:\\Users\\simse\\Documents\\C# Projects\\RekenTrainer\\RekenTrainer\\Form1.cs",
               "RelativeToolTip": "RekenTrainer\\Form1.cs",
-              "ViewState": "AgIAAHoAAAAAAAAAAAAAwJEAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-12-21T11:23:40.128Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RekenTrainer",
-              "DocumentMoniker": "C:\\Users\\simse\\Documents\\C# Projects\\RekenTrainer\\RekenTrainer\\RekenTrainer.csproj",
-              "RelativeDocumentMoniker": "RekenTrainer\\RekenTrainer.csproj",
-              "ToolTip": "C:\\Users\\simse\\Documents\\C# Projects\\RekenTrainer\\RekenTrainer\\RekenTrainer.csproj",
-              "RelativeToolTip": "RekenTrainer\\RekenTrainer.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-01-02T17:29:38.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\simse\\Documents\\C# Projects\\RekenTrainer\\RekenTrainer\\Form1.cs",
-              "RelativeDocumentMoniker": "RekenTrainer\\Form1.cs",
-              "ToolTip": "C:\\Users\\simse\\Documents\\C# Projects\\RekenTrainer\\RekenTrainer\\Form1.cs [Design]",
-              "RelativeToolTip": "RekenTrainer\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T11:06:52.775Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }
