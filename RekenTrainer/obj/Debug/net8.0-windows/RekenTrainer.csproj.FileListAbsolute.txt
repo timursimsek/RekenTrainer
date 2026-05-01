@@ -1,0 +1,17 @@
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\bin\Debug\net8.0-windows\RekenTrainer.exe
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\bin\Debug\net8.0-windows\RekenTrainer.deps.json
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\bin\Debug\net8.0-windows\RekenTrainer.runtimeconfig.json
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\bin\Debug\net8.0-windows\RekenTrainer.dll
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\bin\Debug\net8.0-windows\RekenTrainer.pdb
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.Form1.resources
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.Properties.Resources.resources
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.csproj.GenerateResource.cache
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.AssemblyInfoInputs.cache
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.AssemblyInfo.cs
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.csproj.CoreCompileInputs.cache
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.dll
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\refint\RekenTrainer.dll
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.pdb
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\RekenTrainer.genruntimeconfig.cache
+C:\Users\simse\Documents\C# Projects\RekenTrainer\RekenTrainer\obj\Debug\net8.0-windows\ref\RekenTrainer.dll
